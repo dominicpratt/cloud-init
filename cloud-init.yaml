@@ -6,4 +6,5 @@ package_upgrade: true
 runcmd:
   - curl -o /root/.vimrc https://raw.githubusercontent.com/dominicpratt/cloud-init/refs/heads/main/vimrc
   - curl -o /root/.bashrc https://raw.githubusercontent.com/dominicpratt/cloud-init/refs/heads/main/bashrc
+  - touch /root/cloud-init.success
   - reboot
